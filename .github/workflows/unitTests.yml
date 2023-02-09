@@ -1,0 +1,21 @@
+name: NextJS Unit Tests
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Build the NextJS app
+      - run: npm ci
+      - run: npm run build
+
+      - name: Run unit tests
+      - run: npm run test:ci
