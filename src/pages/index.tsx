@@ -13,7 +13,12 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" />*/}
       </Head>
       <main>
-        <h1 className="text-red-400">Hello world!</h1>
+        <div>
+          <a href="/api/auth/login">Login</a>
+        </div>
+        <div>
+          <a href="/api/auth/logout">Logout</a>
+        </div>
       </main>
     </>
   );
