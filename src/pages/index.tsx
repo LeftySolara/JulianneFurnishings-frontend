@@ -13,7 +13,14 @@ export default function Home() {
         {/* <link rel="icon" href="/favicon.ico" />*/}
       </Head>
       <main>
-        <h1 className="text-red-400">Hello world!</h1>
+        <div>
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/api/auth/login">Login</a>
+        </div>
+        <div>
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+          <a href="/api/auth/logout">Logout</a>
+        </div>
       </main>
     </>
   );
