@@ -3,10 +3,13 @@ import "@testing-library/jest-dom";
 import Home from "@pages/index";
 
 describe("Home", () => {
-  it("Displays 'Hello World'", () => {
+  it("Displays Login and Logout links", () => {
     render(<Home />);
 
-    const hello = screen.getByText(/Hello World/i);
-    expect(hello).toBeInTheDocument();
+    const login = screen.getByText(/Login/i);
+    expect(login).toBeInTheDocument();
+
+    const logout = screen.getByText(/Logout/i);
+    expect(logout).toBeInTheDocument();
   });
 });
