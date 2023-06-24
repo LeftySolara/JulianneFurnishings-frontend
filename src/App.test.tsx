@@ -1,12 +1,12 @@
 import { render, screen } from "@testing-library/react";
 
-import App from "./App";
+import { App } from "./App";
 
 describe("App", () => {
-  it("renders 'Hello World'", () => {
+  it("renders 'Root'", () => {
     render(<App />);
 
-    const heading = screen.getByText("Hello World!");
+    const heading = screen.getByText("Root");
     expect(heading).toBeInTheDocument();
   });
 });
