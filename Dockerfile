@@ -13,7 +13,7 @@ FROM base AS dev
 ENV NODE_ENV development
 RUN npm install
 COPY . .
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev:start"]
 
 FROM base AS prod
 ENV NODE_ENV production
