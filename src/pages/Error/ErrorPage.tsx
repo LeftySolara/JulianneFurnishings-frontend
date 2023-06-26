@@ -10,7 +10,7 @@ const ErrorPage = () => {
       <p>
         <i>
           {isRouteErrorResponse(error)
-            ? error.error?.message || error.statusText
+            ? error.error?.message ?? error.statusText
             : "Unknown error."}
         </i>
       </p>
